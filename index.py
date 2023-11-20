@@ -12,10 +12,10 @@ dados['style'] = dados['style'].replace('white', 0)
 #print(dados.head())
 #print(dado)
 
-x = dados['style']
-y = dados.drop('style', axis = 1)
+y = dados['style']
+x = dados.drop('style', axis = 1)
 
-x_treino, x_teste, y_treino, y_teste = train_test_split(x, y, teste_size = 0.3)
+x_treino, x_teste, y_treino, y_teste = train_test_split(x, y, test_size = 0.3)
 modelo = ExtraTreesClassifier()
 modelo.fit(x_treino, y_treino)
 
