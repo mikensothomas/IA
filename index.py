@@ -8,7 +8,7 @@ dados = pd.read_csv(file_path)
 dados['style'] = dados['style'].replace('red', 1)
 dados['style'] = dados['style'].replace('white', 0)
 #print(dados.head())
-#print(dado)
+#print(dados)
 
 y = dados['style']
 x = dados.drop('style', axis = 1)
