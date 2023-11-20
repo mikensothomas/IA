@@ -2,8 +2,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import ExtraTreesClassifier
-from sklearn.metrics import accuracy_score, classification_report
-from sklearn.preprocessing import LabelEncoder
 
 file_path = 'archive02/wine_dataset.csv'
 dados = pd.read_csv(file_path)
